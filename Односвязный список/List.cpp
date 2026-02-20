@@ -92,6 +92,8 @@ void List::Print() const
 }
 
 //////////////  RemoveAt (int index)  DZ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+///////  Insert(Node* node, index)
+
 
 void List::RemoveHead()//1й
 {

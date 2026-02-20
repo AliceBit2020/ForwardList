@@ -19,3 +19,6 @@ public:
 
     Node(const char data);
 };
+
+
+/// Інкапсуляція данних  ДЗ

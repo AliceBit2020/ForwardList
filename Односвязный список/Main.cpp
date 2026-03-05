@@ -1,50 +1,20 @@
-﻿#include <iostream>
-
 #include "List.h"
-
-using namespace std;
 
 int main()
 {
-	///////////////////////////////////////////////
-
     List list;
 
-   char string[] = "Hello world!";
+    list.Add({"Alex", 20});
+    list.Add({"Maria", 22});
+    list.Add({"John", 25});
 
-
- 
-
-    for (unsigned int i = 0U; i < strlen(string); ++i)
-    {
-        list.Add(string[i]);////   void Add(const char data);
-    }
+    list.Insert({"Kate", 19}, 1);
 
     list.Print();
 
-	
+    list.RemoveAt(2);
 
-	////////////////////////////////////////////////////////////////////
-		
-
-	//Node* new_nd = new Node('Q');
-
-	//list.Add(new_nd);//////void Add(Node * new_node);
-
-
-
-
-	List list2 = list;
-	list2.Print();
-	List list3;
-
-	//list3.Assign(list);
-	//list3.Print();
-	list3 = list;
-	list3.Print();
-	cout << list3.GetSize() << endl;
-
-
+    list.Print();
 
     return 0;
 }
